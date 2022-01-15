@@ -27,6 +27,9 @@ main{
     flex-direction: column;
     align-items: center;
 }
+.navigation{
+    padding-top: 80px;
+}
 .heading-part{
     font-weight: 700;
     font-size: 24px;
@@ -52,6 +55,7 @@ nav{
     padding: 15px 10px;
 }
 .banner{
+    padding-top: 80px;
     display: grid;
     grid-template-columns: 1fr 1fr;
 
@@ -152,6 +156,7 @@ nav{
     height: 25px;
     margin-left: 40px;
     
+    
 }
 /* collection css */
 .all-collection{
@@ -162,30 +167,88 @@ nav{
 .section-title{
     color:#3A3A3A;
     font-size: 28px;
-    margin-top: 60px;
+    margin-top: 80px;
     text-align: center;
     margin-bottom: 30px;
     padding: 10px 0;
 }
 .collection .collection-banner img{
     width: 300px;
-    height: 260px;
+    height: 290px;
+    box-shadow: #3A3A3A;
 }
 .collection-info{
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
+.collection{
+    border-radius: 5px;
+    margin-top:  30px;
+    box-shadow: 5px 5px 20px 10px gray;
+    
+}
+.collection-title {
+    padding-left: 10px;
+
+}
 #para-color{
     color:#3A3A3A;
+    padding-left: 10px;
+    padding-bottom: 10px;
 
 }
 .fa-star.filled{
     color: #ffc014;
+    padding-left: 10px;
 }.
 .fa-star.empty{
     color: #3A3A3A;
 }
+.button-see{
+    outline: 0;
+    border: 0;
+    padding: 0;
+    color: #E02C6D;
+    background: none;
+    font-weight: 600;
+    font-size: 18px;
+    margin-top: 20px;
+    margin-left: 830px; 
+    cursor: pointer;  
+}
+#arrow{
+    color: #E02C6D;
+    padding-left: 5px;
+}
+/* extra part css */
+.influ-market{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.marketer img{
+    width: 80%;
+}
+.market-item{
+    padding-top: 180px;
+}
+.item-para{
+    color: #0a0826;
+    font-size: 45px;
+    font-weight: 700;
+}
+.color-change{
+    color: #E02C6D;
+    font-size: 35px;
+    padding-right: 10px;
+    padding-bottom: 15px;
+}
+.paragraph{
+    font-size: 18px;
+    line-height: 28px;
+    padding-right: 50px;
+}
+/* footer css */
 .section-heading{
  background: #0a0826;
  text-align: center;
