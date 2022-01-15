@@ -27,6 +27,7 @@ main{
     flex-direction: column;
     align-items: center;
 }
+
 .navigation{
     padding-top: 80px;
 }
@@ -35,6 +36,7 @@ main{
     font-size: 24px;
     color:#3A3A3A;
     line-height: 36px;
+    padding-left: 40px;
 }
 nav{
     display: flex;
@@ -213,9 +215,10 @@ nav{
     background: none;
     font-weight: 600;
     font-size: 18px;
-    margin-top: 20px;
+    margin-top: 40px;
     margin-left: 830px; 
-    cursor: pointer;  
+    cursor: pointer; 
+     
 }
 #arrow{
     color: #E02C6D;
@@ -248,6 +251,17 @@ nav{
     line-height: 28px;
     padding-right: 50px;
 }
+.button-end{
+    outline: 0;
+    border: 1px;
+    padding: 10px 20px;
+    color: #ffffff;
+    background: #E02C6D;
+    font-weight: 600;
+    font-size: 18px;
+    margin-top: 20px; 
+    cursor: pointer;  
+}
 /* footer css */
 .section-heading{
  background: #0a0826;
@@ -273,3 +287,59 @@ height: 240px;
     font-size: 32px;
     padding-top: 20px;
 }
+#nav-toggler{
+    display: none;
+}
+.nav-toggler-icon {
+    display: none;
+}
+/*====================================
+====== responsive css start ==========
+=====================================*/
+@media only screen and (max-width:688px){
+    .container{
+        width: 100%;
+    }
+    .navigation, .banner, .all-collection, .logos, .influ-market{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .navigation, .banner, .all-collection, .logos, .influ-market, .section-heading{
+        flex-direction: column;
+    }
+    .banner-left{
+        order: 2;
+        padding: 20px 0;
+    }
+    .banner-right img{
+        max-width: 300px;
+    }
+    .heading-part{
+        font-weight: 500;
+        font-size: 18px;
+        color:#3A3A3A;
+        line-height: 26px;
+        
+    }
+    .section-title h2{
+        justify-content: center;
+    }
+}
+}
+/* --------------------------------------
+            Tablet Devices
+-----------------------------------------*/
+@media only screen and (min-width:668px) and (max-width:992px){
+    .container{
+        width: 100%;
+    }
+    .banner, .influ-market{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .collection{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .all-collection, .influ-market{
+        flex-direction: column;
+    }
+}
+    
